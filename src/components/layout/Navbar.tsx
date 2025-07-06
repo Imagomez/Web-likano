@@ -8,10 +8,10 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
+          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
             <span className="sr-only">Likano</span>
             <span className="font-extrabold text-xl" style={{ color: 'var(--color-primary)' }}>LIKANO</span>
-          </a>
+          </Link>
         </div>
         <div className="hidden lg:flex lg:gap-x-8">
           <a href="#servicios" className="text-base font-semibold leading-6 text-gray-900 hover:text-blue-700 transition" style={{ color: 'var(--color-primary)' }}>Servicios</a>
@@ -20,13 +20,13 @@ export default function Navbar() {
           <a href="#contacto" className="text-base font-semibold leading-6 text-gray-900 hover:text-blue-700 transition" style={{ color: 'var(--color-primary)' }}>Contacto</a>
         </div>
         <div className="flex flex-1 justify-end">
-          <a
+          <Link
             href="/agendar"
             className="rounded-full px-5 py-2 text-base font-semibold text-white shadow-sm transition"
             style={{ backgroundColor: 'var(--color-secondary)' }}
           >
             Agendar
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
