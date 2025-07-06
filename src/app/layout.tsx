@@ -15,15 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-<<<<<<< HEAD
-  title: "Likano - Agencia de IA para empresas.",
+  title: "Likano - Agencia de IA para empresas",
   description:
-    "Sistemas de automatización, Agentes de IA, asistentes de llamada, CRM automatizado ",
-=======
-  title: "Likano AI - Agencia de IA para Inmobiliarias",
-  description:
-    "Sistemas de automatización, chatbots, asistentes de llamada, CRM automatizado y más para el sector inmobiliario.",
->>>>>>> a08300a9519f275431c75c130fda650ad25bc393
+    "Sistemas de automatización, Agentes de IA, chatbots, asistentes de llamada, CRM automatizado",
 };
 
 export default function RootLayout({
