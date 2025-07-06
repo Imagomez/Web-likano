@@ -47,10 +47,12 @@ export default function RootLayout({
                 g.async = true;
                 s.parentNode.insertBefore(g,s);
                 g.onload=function(){
-                  window.chatwootSDK.run({
-                    websiteToken: 'iV7vJ98MUFfQKRNrrbDxCNhr',
-                    baseUrl: BASE_URL
-                  })
+                  if (typeof window !== 'undefined' && window.chatwootSDK) {
+                    window.chatwootSDK.run({
+                      websiteToken: 'iV7vJ98MUFfQKRNrrbDxCNhr',
+                      baseUrl: BASE_URL
+                    });
+                  }
                 }
               })(document,"script");
             `,
