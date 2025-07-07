@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'tu-google-verification-code',
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || 'tu-google-verification-code',
   },
 };
 

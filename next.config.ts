@@ -1,11 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Optimizaciones para Vercel
-  output: 'standalone',
+  // Configuración básica para Vercel
   poweredByHeader: false,
   compress: true,
-  generateEtags: false,
   
   // Configuración de imágenes
   images: {
@@ -15,7 +13,7 @@ const nextConfig: NextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // Headers de seguridad
+  // Headers de seguridad básicos
   async headers() {
     return [
       {
@@ -29,29 +27,14 @@ const nextConfig: NextConfig = {
             key: 'X-Content-Type-Options',
             value: 'nosniff',
           },
-          {
-            key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin',
-          },
-          {
-            key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=()',
-          },
         ],
       },
     ];
   },
 
-  // Configuración de entorno
-  env: {
-    CUSTOM_KEY: process.env.CUSTOM_KEY,
-  },
-
   // Optimizaciones experimentales
   experimental: {
     optimizePackageImports: ['@next/font'],
-    optimizeCss: true,
-    scrollRestoration: true,
   },
 };
 
