@@ -1,3 +1,36 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Agendar Consulta | Likano - Consultoría Gratuita de IA",
+  description: "Agenda una consulta gratuita con nuestros expertos en IA y automatización empresarial. Descubre cómo transformar tu empresa con inteligencia artificial.",
+  keywords: [
+    "consulta gratuita",
+    "agendar",
+    "asesoría IA",
+    "consultoría automatización",
+    "expertos IA",
+    "transformación digital",
+    "agenda reunión",
+    "consulta personalizada"
+  ],
+  openGraph: {
+    title: "Agendar Consulta | Likano - Consultoría Gratuita de IA",
+    description: "Agenda una consulta gratuita con nuestros expertos en IA y automatización empresarial.",
+    url: "https://likano.com/agendar",
+    siteName: "Likano",
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Agendar Consulta | Likano - Consultoría Gratuita de IA",
+    description: "Agenda una consulta gratuita con nuestros expertos en IA y automatización empresarial.",
+  },
+  alternates: {
+    canonical: "https://likano.com/agendar",
+  },
+};
+
 export default function Agendar() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-white py-12">

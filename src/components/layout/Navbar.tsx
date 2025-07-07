@@ -13,11 +13,13 @@ export default function Navbar() {
             <span className="font-extrabold text-xl text-[#0A2239]">LIKANO</span>
           </Link>
         </div>
-        <div className="hidden lg:flex lg:gap-x-8">
-          <a href="#servicios" className="text-base font-semibold leading-6 text-[#0A2239] hover:text-blue-700 transition">Servicios</a>
-          <a href="#testimonios" className="text-base font-semibold leading-6 text-[#0A2239] hover:text-blue-700 transition">Testimonios</a>
-          <a href="#estadisticas" className="text-base font-semibold leading-6 text-[#0A2239] hover:text-blue-700 transition">Estadísticas</a>
-          <a href="#contacto" className="text-base font-semibold leading-6 text-[#0A2239] hover:text-blue-700 transition">Contacto</a>
+        <div className="hidden lg:flex lg:gap-x-4">
+          <a href="#servicios" className="text-sm font-semibold leading-6 text-[#0A2239] hover:text-blue-700 transition">Servicios</a>
+          <a href="#casos-exito" className="text-sm font-semibold leading-6 text-[#0A2239] hover:text-blue-700 transition">Casos</a>
+          <a href="#beneficios" className="text-sm font-semibold leading-6 text-[#0A2239] hover:text-blue-700 transition">Resultados</a>
+                    <a href="#integraciones" className="text-sm font-semibold leading-6 text-[#0A2239] hover:text-blue-700 transition">Integraciones</a>
+          <a href="#tecnologias" className="text-sm font-semibold leading-6 text-[#0A2239] hover:text-blue-700 transition">Tecnologías</a>
+          <a href="#contacto" className="text-sm font-semibold leading-6 text-[#0A2239] hover:text-blue-700 transition">Contacto</a>
         </div>
         <div className="flex flex-1 justify-end">
           <Link
